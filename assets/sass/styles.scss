@@ -27,10 +27,7 @@
   & > div {
     width: 33.3%;
     @extend %border-box;
-    div {
-  line-height: 1.4; 
-      padding: 0 20px 0 0;
-    }
+
   }
   .left {
     float: left;
@@ -54,6 +51,9 @@
 
 .green-color {
   color: #74cb7d
+}
+.blue-color {
+  color: rgb(22, 66, 95)
 }
 .center {
   text-align: center;
@@ -240,6 +240,10 @@ html, body {
 
   & > div {
     padding: 50px 150px;
+
+    @media (max-width: 960px){
+      padding: 20px!important;
+    }
   }
 }
 
@@ -261,8 +265,13 @@ html, body {
 }*/
 
 .team {
+  padding: 50px!important;
   .staff {
     margin-right: 10px;
+    @media (max-width: 1330px){
+      margin-right: 6px!important;
+    }
+
     width: 24%;
     @extend %border-box;
 
@@ -282,7 +291,16 @@ html, body {
   }
 }
 
-.politify-box {padding-top: 0!important}
+.politify-box {
+  padding: 0 30px 50px 30px!important;
+
+  & > div {
+    padding: 20px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+}
 
 .last {
   background: rgb(22, 66, 95);
@@ -297,3 +315,11 @@ html, body {
 .no-pad-top{
     padding-top: 0!important;
   }
+
+.first-box {
+  padding: 50px!important;
+}
+
+.funding-table {
+  padding: 50px 90px!important;
+}
